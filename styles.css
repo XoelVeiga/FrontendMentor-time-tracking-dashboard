@@ -1,12 +1,74 @@
+@font-face {
+    font-family: "Rubik";
+    src: url("fonts/Rubik-VariableFont_wght.ttf");
+}
+
 body {
-    background-color: hsl(235, 46%, 20%);
+    font-family: "Rubik";
+    background-color: hsl(226, 43%, 10%);
+    height: 100%;
 }
 
 .container {
     display: flex;
     align-items: center;
-    justify-content: center;
     border-width: 1px;
     border-style: solid;
     border-color: black;
+    justify-content: space-around;
+}
+
+.big_card {
+    color: white;
+    display: block;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+    width: 350px;
+}
+
+.big_card img {
+    height: 75px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+}
+
+.section_1 {
+    background-color: hsl(246, 80%, 60%);
+    padding-left: 20px;
+    border-radius: 15px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.section_1 p {
+    margin-bottom: -20px;
+}
+
+
+.section_2 {
+    display: block;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.section_2 p:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: hsl(235, 46%, 20%);
+    height: 10rem;
+    width: 13rem;
+    margin: 15px;
+    border-radius: 15px;
+    color: white;
 }
